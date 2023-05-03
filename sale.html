@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Login & Registration | Codehal</title>
+    <script src="assets/Script/script.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Icarshop</h2>
+        <nav class="navigation">
+            <a href="/index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Sale</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup" id="login">Login</button>
+        </nav>
+        
+    </header>
+    <div class="wrapper hidden">
+                
+        <div class="form__box login ">
+            <form action="" method="POST">
+                <h2>Login</h2>
+                <div class="input__box">
+                  <span class="icon">
+                    <i class="ri-account-circle-line"></i>
+                  </span>
+                  <input type="text" name="login__email" id="login__email" required>
+                  <label>Email</label>
+                </div>
+                <div class="input__box">
+                  <span class="icon">
+                    <i class="ri-lock-line"></i>
+                  </span>
+                  <input type="password" name="password" id="password" required>
+                  <label>Password</label>
+                </div>
+                <div class="remember__forget">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                  <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn" id="login-btn">Login</button>
+                <div class="login__register">
+                  <p>
+                    Don't have an account?
+                    <a class="registration__link">Register</a>
+                  </p>
+                </div>
+              </form>
+              
+        </div>
+
+        <div class="form__box register ">
+            <form action="" method="POST">
+              <h2>Registration</h2>
+              
+              <div class="input__box">
+                <span class="icon">
+                  <i class="ri-mail-line"></i>
+                </span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+              </div>
+              
+              <div class="input__box">
+                <span class="icon">
+                  <i class="ri-lock-line"></i>
+                </span>
+                <input type="password" name="password" required>
+                <label>Password</label>
+              </div>
+              <div class="input__box">
+                <span class="icon">
+                  <i class="ri-account-circle-line"></i>
+                </span>
+                <input type="password" name="confirm__password" required>
+                <label>Confirm password</label>
+              </div>
+              <div class="remember__forget">
+                <label>
+                  <input type="checkbox"> I agree to the terms & conditions
+                </label>
+              </div>
+              <button type="submit" class="btn">Register</button>
+              <div class="login__register">
+                <p>
+                  Already have an account?      
+                  <a class="login__link">Login</a>
+                </p>
+              </div>
+            </form>
+        </div>
+    </div>
+    <main>
+      <h1>Bilar till salu!</h1>
+      <p>Välkomna till Icarshop, där ni hittar fina och hyfsat nya bilar i ny skick för ett bra pris</p>
+      <section>
+        <h2>Volvo XC90</h2>
+        <img src="assets/img/Volvo XC90.jpg" alt="Volvo XC90">
+        <ul>
+          <li>Årsmodell: 2020</li>
+          <li>Miltal: 10 000</li>
+          <li>Pris: 350 000 kr</li>
+        </ul>
+      </section>
+      <section>
+          <h2>Toyota Camry</h2>
+          <img src="assets/img/Toyota-camry.jpg" alt="Toyota Camry">
+          <ul>
+            <li>Årsmodell: 2019</li>
+            <li>Miltal: 20 000</li>
+            <li>Pris: 250 000 kr</li>
+          </ul>
+        </section>
+      <section>
+        <h2>BMW X5</h2>
+        <img src="assets/img/bmw-x5.jpg" alt="BMW X5">
+        <ul>
+          <li>Årsmodell: 2018</li>
+          <li>Miltal: 3 000</li>
+          <li>Pris: 450 000 kr</li>
+        </ul>
+      </section>
+      <section>
+          <h2>Audi Q7</h2>
+          <img src="assets/img/Audi Q7.jpg" alt="Audi Q7">
+          <ul>
+            <li>Årsmodell: 2020</li>
+            <li>Miltal: 6 000</li>
+            <li>Pris: 505 000 kr</li>
+          </ul>
+          <section>
+              <section>
+                  <h2>Posche Cayenne</h2>
+                  <img src="assets/img/Posche Cayenne.jpg" alt="Posche Cayenne">
+                  <ul>
+                    <li>Årsmodell: 2020</li>
+                    <li>Miltal: 3 000</li>
+                    <li>Pris: 650 000 kr</li>
+                  </ul>
+          </section>
+          <section>
+              <section>
+                  <h2>Marcedes Benz A-class</h2>
+                  <img src="assets/img/Marcedes Benz A-class.jpg" alt="Marcedes Benz A-class">
+                  <ul>
+                    <li>Årsmodell: 2020</li>
+                    <li>Miltal: 1 000</li>
+                    <li>Pris: 458 000 kr</li>
+                  </ul>
+          </section>
+    </main>
+</body>
+</html>
