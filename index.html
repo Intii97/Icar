@@ -13,7 +13,7 @@
         <h2 class="logo">Icarshop</h2>
         <nav class="navigation">
             <a href="/index.html">Home</a>
-            <a href="#">About</a>
+            <a href="/index.html" id="aboutLink">About</a>
             <a href="/sale.html">Sale</a>
             <a href="#">Contact</a>
             <button class="btnLogin-popup" id="login">Login</button>
@@ -24,11 +24,10 @@
     <main>
 
         <!-- HOME WELCOME  -->
-        <div class="intro">
+        <div class="intro hidden">
             <h1>Welcome to Icarshops</h1>
             <p>
-                Welcome to Icarshops - 
-                your guide to finding your dream car at a 
+                Your guide to finding your dream car at a 
                 fantastic price! We take pride in offering 
                 a wide selection of high-quality used cars for sale, 
                 from reliable manufacturers that ensure a smooth driving experience. 
@@ -36,9 +35,19 @@
                 committed to providing an unmatched customer experience by 
                 offering exceptional service and advice at every step of your purchase. 
                 We strive to help you find your perfect car and look forward 
-                to working with you. Welcome to Icarshops!
+                to working with you. 
             </p>
+            <p1>To buy a car register yourself and then login!</p1>
         </div>
+
+        <!-- About -->
+        <div class="About hidden">
+          <h2>About Icarshop</h2>
+          <p>Icarshop was founded with the goal of offering high-quality used cars at affordable prices. They have a wide range of cars from various brands and models that have undergone a thorough quality check before being sold to customers. In addition to providing high-quality cars at affordable prices, Icarshop also focuses on offering excellent customer service. They have a dedicated customer support team that is always available to help their customers with any questions or issues that may arise during the buying process. Icarshop also has an online platform where customers can search for cars that fit their needs and budget, and make the purchase conveniently and securely online. They also offer financing options and help customers arrange for transportation of the car to their home country.
+          In summary, Icarshopis a reliable and trustworthy car dealership that offers high-quality used cars at affordable prices. They have a dedicated customer support team and an online platform that makes it easy for customers to find and purchase cars conveniently and safely.</p>
+        <p1> For more information about which car is available go to sale</p1>
+        </div>
+
 
         <!-- LOGIN AND REGISTER -->
 
@@ -51,6 +60,7 @@
                       <span class="icon">
                         <i class="ri-account-circle-line"></i>
                       </span>
+                      <span class="icon"><ion-icon name="mail"></ion-icon></span>
                       <input type="text" name="login__email" id="login__email" required>
                       <label>Email</label>
                     </div>
@@ -58,6 +68,7 @@
                       <span class="icon">
                         <i class="ri-lock-line"></i>
                       </span>
+                      <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                       <input type="password" name="password" id="password" required>
                       <label>Password</label>
                     </div>
@@ -86,6 +97,7 @@
                     <span class="icon">
                       <i class="ri-mail-line"></i>
                     </span>
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
                     <input type="email" name="email" required>
                     <label>Email</label>
                   </div>
@@ -94,6 +106,7 @@
                     <span class="icon">
                       <i class="ri-lock-line"></i>
                     </span>
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                     <input type="password" name="password" required>
                     <label>Password</label>
                   </div>
@@ -101,6 +114,7 @@
                     <span class="icon">
                       <i class="ri-account-circle-line"></i>
                     </span>
+                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                     <input type="password" name="confirm__password" required>
                     <label>Confirm password</label>
                   </div>
@@ -123,6 +137,8 @@
         
 
     </main>
-
+  </script src= "script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

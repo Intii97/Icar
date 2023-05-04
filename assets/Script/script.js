@@ -20,3 +20,20 @@ loginButton.addEventListener("click", function() {
   const wrapperDiv = document.querySelector(".wrapper");
   wrapperDiv.classList.toggle("hidden");
 });
+
+
+const homeLink = document.querySelector('a[href="/index.html"]');
+const introDiv = document.querySelector('.intro');
+
+homeLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  introDiv.classList.toggle('hidden');
+});
+
+const aboutLink = document.querySelector('#aboutLink');
+const aboutDiv = document.querySelector('.About');
+
+aboutLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  aboutDiv.classList.toggle('hidden');
+});
