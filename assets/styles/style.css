@@ -301,7 +301,9 @@ transform-origin:left;
 
 .intro p {
     font-size: 18px;
-    margin-top: 20px;
+    margin: 2rem 3rem ;
+    padding: 2rem;
+
   }
 
   .intro p1 {
@@ -415,5 +417,81 @@ transform-origin:left;
   
   .Contact strong {
     font-weight: bold;
+  }
+  
+        /*Sale*/
+  .hidden {
+    display: none;
+  }
+
+  /* Stil för hela sidan */
+.sale body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stil för huvudrubriken */
+ .sale h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+  }
+  
+  /* Stil för beskrivningstexten */
+  .sale p {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 1.5rem;
+    
+  }
+  
+  /* Bilarna redigering */
+  .sale {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .sale div {
+    flex-basis: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .sale img {
+    width: 60%;
+    height: auto;
+    display: block;
+  }
+  
+  .sale ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+  
+  .sale ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Add some space between the first two images */
+  .sale div:nth-child(-n+2) {
+    margin-right: 20px;
+  }
+  
+  /* Reset the margin for the remaining images */
+  .sale div:nth-child(n+3) {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  button {
+    font-size: 1.8em;
+    background-color: #e0960d;
+    color:black;
   }
   
