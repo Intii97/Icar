@@ -420,9 +420,6 @@ transform-origin:left;
   }
   
         /*Sale*/
-  .hidden {
-    display: none;
-  }
 
   /* Stil för hela sidan */
 .sale body {
@@ -493,5 +490,9 @@ transform-origin:left;
     font-size: 1.8em;
     background-color: #e0960d;
     color:black;
+  }
+
+  .hidden {
+    display: none;
   }
   
