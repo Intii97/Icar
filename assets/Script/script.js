@@ -37,3 +37,11 @@ aboutLink.addEventListener('click', function(event) {
   event.preventDefault();
   aboutDiv.classList.toggle('hidden');
 });
+
+const contactLink = document.querySelector('#contactLink');
+const contactDiv = document.querySelector('.Contact');
+
+contactLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  contactDiv.classList.toggle('hidden');
+});
