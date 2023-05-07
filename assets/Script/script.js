@@ -27,7 +27,7 @@ const introDiv = document.querySelector('.intro');
 
 homeLink.addEventListener('click', function(event) {
   event.preventDefault();
-  introDiv.classList.remove('hidden');
+  introDiv.classList.toggle ('hidden');
   saleDiv.classList.add('hidden');
 });
 
@@ -53,9 +53,10 @@ const saleDiv = document.querySelector('.Sale');
 
 saleLink.addEventListener('click', function(event) {
   event.preventDefault();
-  introDiv.classList.add('hidden');
-  saleDiv.classList.remove('hidden');
+  saleDiv.classList.toggle ('hidden');
 });
+
+
 
 
 const registerForm = document.querySelector('.register form');
@@ -81,7 +82,7 @@ registerForm.addEventListener('submit', (event) => {
     if (response.ok) {
       console.log('Registration successful');
       
-    
+      alert('Registration successful')
     } else if (response.status === 409) {
       console.log('Registration failed:', response.statusText);
      
@@ -105,7 +106,7 @@ loginBtn.addEventListener('click', (event) => {
 
   const email = document.querySelector('#login__email').value;
   const password = document.querySelector('#password').value;
-
+  console.log(email)
   fetch('/', {
     method: 'POST',
     headers: {
@@ -121,6 +122,7 @@ loginBtn.addEventListener('click', (event) => {
       response.json().then(data => {
         if (data.isLoggedIn) {
           console.log('login is success');
+          alert('Welcome back ', email)
         } else {
           console.log('Invalid username or password');
         }

@@ -39,7 +39,10 @@ app.get('/', function(req, res) {
 
 });
 
+app.listen(4000, () => {
 
+   console.log('Server started on port 4000');
+  });
 
 app.post('/register', encoder, function(req, res){
     var email = req.body.email;
