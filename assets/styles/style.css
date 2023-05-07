@@ -471,15 +471,15 @@ transform-origin:left;
   
   /* Style for each card */
   .card {
-    width: calc(50% - 20px); /* Bredden på varje kort är hälften av container minus mellanrum */
+    width: calc(50% - 20px); 
     margin: 15px; /* Mellanrum mellan korten */
-    background-color: #62605e;
+    background-color: #898683;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    display: flex; /* Lägg till denna rad */
-  flex-direction: column; /* Lägg till denna rad */
+    display: flex;
+    flex-direction: column; 
   }
   
   /* Style for the card title */
