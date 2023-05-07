@@ -7,6 +7,9 @@
     <title>Website with Login & Registration | Codehal</title>
     <script src="assets/Script/script.js" defer></script>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
     <header>
@@ -164,70 +167,97 @@
         <!-- sale -->
         <main>
           <div class="Sale hidden">
-            <h1> Cars for sale!</h1>
-            <p>Welcome to Icarshop, where you will find nice and reasonably new cars in new condition for a good price</p>
-            <div>
-              <h2>Volvo XC90</h2>
-              <img src="assets/img/Volvo XC90.jpg" alt="Volvo XC90">
-              <ul>
-                <li>Årsmodell: 2020</li>
-                <li>Miltal: 10 000</li>
-                <li>Pris: 350 000 kr</li>
-              </ul>
-              <button class="buy-button">Buy</button>
-            </div>
-            <div>
-              <h3>Toyota Camry</h3>
-              <img src="assets/img/Toyota-camry.jpg" alt="Toyota Camry">
-              <ul>
-                <li>Årsmodell: 2019</li>
-                <li>Miltal: 20 000</li>
-                <li>Pris: 250 000 kr</li>
-              </ul>
-              <button class="buy-button">Buy</button>
-            </div>
-            <div>
-              <h4>BMW X5</h4>
-              <img src="assets/img/bmw-x5.jpg" alt="BMW X5">
-              <ul>
-                <li>Årsmodell: 2018</li>
-                <li>Miltal: 3 000</li>
-                <li>Pris: 450 000 kr</li>
-              </ul>
-              <button class="buy-button">Buy</button>
-            </div>
-            <div>
-              <h5>Audi Q7</h5>
-              <img src="assets/img/Audi Q7.jpg" alt="Audi Q7">
-              <ul>
-                <li>Årsmodell: 2020</li>
-                <li>Miltal: 6 000</li>
-                <li>Pris: 505 000 kr</li>
-              </ul>
-              <button class="buy-button">Buy</button>
-            </div>
-            <div>
-              <h6>Posche Cayenne</h6>
-              <img src="assets/img/Posche Cayenne.jpg" alt="Posche Cayenne">
-              <ul>
-                <li>Årsmodell: 2020</li>
-                <li>Miltal: 3 000</li>
-                <li>Pris: 650 000 kr</li>
-              </ul>
-              <button class="buy-button">Buy</button>
-            </div>
-            <div>
-              <h7>Marcedes Benz A-class</h7>
-              <img src="assets/img/Marcedes Benz A-class.jpg" alt="Marcedes Benz A-class">
-              <ul>
-                <li>Årsmodell: 2020</li>
-                <li>Miltal: 1 000</li>
-                <li>Pris: 458 000 kr</li>
-              </ul>
-              <button class="buy-button">Buy</button>
-            </div>
+            <h1> Cars for sale</h1>
+            <p>Welcome to Icarshop, where you will find nice and reasonably new cars in new condition for a good price!</p>
+            <div class="container">
+
+              
+              <div class="card">
+                <div class="box">
+                  <h2>Volvo XC90</h2>
+                  <img src="assets/img/Volvo XC90.jpg" alt="Volvo XC90">
+                  <ul>
+                    <li>Årsmodell: 2020</li>
+                    <li>Miltal: 10 000</li>
+                    <li>Pris: 350 000 kr</li>
+                  </ul>
+                  <button class="volvoBuyButton" onclick="showMessage('You have bought a Volvo XC90')">Buy</button>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div>
+                  <h3>Toyota Camry</h3>
+                  <img src="assets/img/Toyota-camry.jpg" alt="Toyota Camry">
+                  <ul>
+                    <li>Årsmodell: 2019</li>
+                    <li>Miltal: 20 000</li>
+                    <li>Pris: 250 000 kr</li>
+                  </ul>
+                  <button class="buy-button" onclick="showMessage('You have bought a Toyota Camry')">Buy</button>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div>
+                  <h4>BMW X5</h4>
+                  <img src="assets/img/bmw-x5.jpg" alt="BMW X5">
+                  <ul>
+                    <li>Årsmodell: 2018</li>
+                    <li>Miltal: 3 000</li>
+                    <li>Pris: 450 000 kr</li>
+                  </ul>
+                  <button class="buy-button" onclick="showMessage('You have bought a BMW X5')">Buy</button>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div>
+                  <h5>Audi Q7</h5>
+                  <img src="assets/img/Audi Q7.jpg" alt="Audi Q7">
+                  <ul>
+                    <li>Årsmodell: 2020</li>
+                    <li>Miltal: 6 000</li>
+                    <li>Pris: 505 000 kr</li>
+                  </ul>
+                  <button class="buy-button" onclick="showMessage('You have bought an Audi Q7')">Buy</button>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div>
+                  <h6>Posche Cayenne</h6>
+                  <img src="assets/img/Posche Cayenne.jpg" alt="Posche Cayenne">
+                  <ul>
+                    <li>Årsmodell: 2020</li>
+                    <li>Miltal: 3 000</li>
+                    <li>Pris: 650 000 kr</li>
+                  </ul>
+                  <button class="buy-button" onclick="showMessage('You have bought a Posche Cayenne')">Buy</button>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div>
+                  <h7>Marcedes Benz A-class</h7>
+                  <img src="assets/img/Marcedes Benz A-class.jpg" alt="Marcedes Benz A-class">
+                  <ul>
+                    <li>Årsmodell: 2020</li>
+                    <li>Miltal: 1 000</li>
+                    <li>Pris: 458 000 kr</li>
+                  </ul>
+                  <button class="buy-button" onclick="showMessage('You have bought a Marcedes Benz A-class')">Buy</button>
+                </div>  
+              </div>  
+            </div>  
+          </div>  
     </main>
   </script src= "script.js"></script>
+  <script>
+    function showMessage(carName) {
+      alert(`Thank you for purchasing ${carName}! Your order has been completed.`);
+    }
+  </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

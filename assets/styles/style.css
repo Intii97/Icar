@@ -419,80 +419,124 @@ transform-origin:left;
     font-weight: bold;
   }
   
-        /*Sale*/
-
-  /* Stil för hela sidan */
-.sale body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+        /*Sale*/ 
+        
   /* Stil för huvudrubriken */
- .sale h1 {
-    text-align: center;
-    margin-top: 80px;
+  .Sale {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+  }
+
+  
+
+  .Sale .card {
+    width: 40%;
+  }
+  .Sale h1 {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 30px;
   }
-  
+
   /* Stil för beskrivningstexten */
-  .sale p {
-    text-align: center;
-    margin-bottom: 100px;
-    font-size: 1.5rem;
+  .Sale p {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+  
+  /* Bil redigering */
+
+  /* Style for card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .card-row {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
     
   }
   
-  /* Bilarna redigering */
-  .sale {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: Arial, sans-serif;
+  /* Style for each card */
+  .card {
+    width: calc(50% - 20px); /* Bredden på varje kort är hälften av container minus mellanrum */
+    margin: 15px; /* Mellanrum mellan korten */
+    background-color: #62605e;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex; /* Lägg till denna rad */
+  flex-direction: column; /* Lägg till denna rad */
+  }
+  
+  /* Style for the card title */
+  .card h2,
+  .card h3,
+  .card h4,
+  .card h5,
+  .card h6,
+  .card h7 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the card image */
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the card details */
+  .card ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-
+    text-align: left;
   }
   
-  .sale div {
-    flex-basis: 40%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .sale img {
-    width: 60%;
-    height: auto;
-    display: block;
-  }
-  
-  .sale ul {
-    list-style: none;
-    margin: 10px 0 0 0;
-    padding: 0;
-  }
-  
-  .sale ul li {
+  .card li {
+    font-size: 16px;
     margin-bottom: 5px;
   }
   
-  /* Add some space between the first two images */
-  .sale div:nth-child(-n+2) {
-    margin-right: 20px;
+  /* Style for the buy button */
+  .card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000e5;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  /* Reset the margin for the remaining images */
-  .sale div:nth-child(n+3) {
-    margin-right: 0;
-    margin-top: 20px;
+  .card button:hover {
+    background-color:  #cf850fe5;
   }
-
-  button {
-    font-size: 1.8em;
-    background-color: #e0960d;
-    color:black;
-  }
-
+  
   .hidden {
     display: none;
   }
+  
+  /* buy button*/
+
+  
   
